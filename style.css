@@ -1,18 +1,29 @@
+* {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+body {
+  background-image: url("./img/binary\ background.jpg");
+  background-size: 100px;
+}
+
 .fixed-container {
   position: fixed;
+  display: block;
   width: 100%;
   top: 0;
   left: 0;
+  background-color: rgb(148,196,147);
 }
 
 header {
-  background-color: rgb(123,167,149);
-  display: block;
-  width: 100%;
+  display: inline;
 }
 
 header img {
+  padding-top: 10px;
   max-height: 50px;
+  display: inline;
 }
 
 header h1 {
@@ -21,7 +32,7 @@ header h1 {
 
 nav {
   display: inline;
-  background-color: rgb(123,167,149);
+  background-color: rgb(148,196,147);
 }
 
 nav li {
@@ -55,15 +66,30 @@ main {
 main p {
   border: 1px #333 solid;
   padding: 50px;
+  background-color: rgb(255, 220, 170);
 }
 
 @media screen and (max-width: 650px) {
   nav {
     display: block;
   }
+  
+  .dynamic-container {
+    padding-top: 50px;
+  }
+}
+
+@media screen and (max-width: 570px) {
+  nav { 
+    display: none;
+  }
 }
 
 @media screen and (max-width: 500px) {
+  h1 {
+    font-size: 1.5em;
+  }
+
   nav li:first-child {
     padding: 5px;
   }
@@ -73,6 +99,10 @@ main p {
     padding: 5px;
     text-align: center;
     margin-top: 5px;
+  }
+
+  nav {
+    display: none;
   }
 
   main p {
