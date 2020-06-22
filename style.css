@@ -35,6 +35,10 @@ nav {
   background-color: rgb(148,196,147);
 }
 
+.bar-icon {
+  display: none;
+}
+
 nav li {
   display: inline;
   list-style: none;
@@ -84,8 +88,20 @@ main p {
     padding-top: 35px;
   }
 
-  nav { 
+  nav {
+    display: inline;
+  }
+
+  nav li { 
     display: none;
+  }
+
+  .bar-icon {
+    font-size: 1.6em;
+    display: inline-block;
+    float: right;
+    margin-top: 10px;
+    margin-right: 15px;
   }
 
   header img {
@@ -96,17 +112,6 @@ main p {
 @media screen and (max-width: 500px) {
   h1 {
     font-size: 1.5em;
-  }
-
-  nav li, nav li:first-child {
-    display: block;
-    padding: 5px;
-    text-align: center;
-    margin-top: 5px;
-  }
-
-  nav {
-    display: none;
   }
 
   main p {
