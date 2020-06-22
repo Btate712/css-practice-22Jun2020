@@ -69,19 +69,27 @@ main p {
   background-color: rgb(255, 220, 170);
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 670px) {
   nav {
     display: block;
   }
   
   .dynamic-container {
-    padding-top: 50px;
+    padding-top: 70px;
   }
 }
 
 @media screen and (max-width: 570px) {
+  .dynamic-container {
+    padding-top: 35px;
+  }
+
   nav { 
     display: none;
+  }
+
+  header img {
+    max-height: 35px;
   }
 }
 
@@ -90,11 +98,7 @@ main p {
     font-size: 1.5em;
   }
 
-  nav li:first-child {
-    padding: 5px;
-  }
-
-  nav li {
+  nav li, nav li:first-child {
     display: block;
     padding: 5px;
     text-align: center;
